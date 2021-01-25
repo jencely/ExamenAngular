@@ -1,16 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FacturaComponent } from './facturas/facturas.component';
+import { MensajesComponent } from './mensajes/mensajes.component';
+import { FacturaDetalleComponent } from './factura-detalle/factura-detalle.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppRoutingModule,
+    AppComponent,
+    FacturaComponent,
+    MensajesComponent,
+    FacturaDetalleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

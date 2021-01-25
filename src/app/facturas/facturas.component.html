@@ -1,0 +1,10 @@
+<h2>app-facturas</h2>
+<ul class="facturas">
+    <li *ngFor="let facturas of facturas" (click)="onSelect(facturas)" [class.selected]="facturas=== selectedFactura">
+        <span class="badge">{{facturas.fecha_emision}}</span> {{facturas.numero_factura}}
+        <span class="badge">{{facturas.cedula_ruc}}</span> {{facturas.nombre_cliente}}
+    </li>
+</ul>
+
+<app-factura-detalle-component [facturas]="selectedFactura" ></app-factura-detalle-component>
+

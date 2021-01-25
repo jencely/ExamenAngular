@@ -1,0 +1,20 @@
+<div *ngIf="facturas">
+
+   <h2>Detalles de la factura {{facturas.name | uppercase}} </h2>
+   <div><span>Fecha de emision: </span>{{facturas.fecha_emision}}</div>
+   <div><span>Factura nº: </span>{{facturas.numero_factura}}</div>
+   <div><span>Cedula o RUC: </span>{{facturas.cedula_ruc}}</div>
+   <div><span>Cliente: </span>{{facturas.nombre_cliente}}</div>
+   <div><span>Dirección: </span>{{facturas.direccion}}</div>
+   <div><span>Telefono: </span>{{facturas.telefono}</div>
+   <div><span>Subtotal: </span>{{facturas.subtotal}}</div>
+   <div><span>IVA: </span>{{facturas.iva}}</div>
+   <div><span>Total: </span>{{facturas.total}}</div>
+   <div>
+     <label>name:
+       <input [(ngModel)]="facturas.name" placeholder="name"/>
+     </label>
+   </div>
+ 
+ </div>
+
